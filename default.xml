@@ -497,5 +497,6 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="vendor/htc" name="android_vendor_htc" remote="lpop" />
   <project path="vendor/lpop" name="android_vendor_lpop" remote="lpop" />
+  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom-opensource_dpm" remote="lpop" />
 
 </manifest>
