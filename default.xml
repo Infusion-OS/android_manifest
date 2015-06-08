@@ -187,7 +187,7 @@
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" />
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
-  <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
+  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="lpop" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" groups="pdk-cw-fs" />
   <project path="external/libtar" name="android_external_libtar" groups="pdk" remote="lpop" />
