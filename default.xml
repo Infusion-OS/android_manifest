@@ -210,6 +210,7 @@
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
+  <project path="external/lz4" name="android_external_lz4" remote="lpop" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs" />
@@ -282,7 +283,7 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
-  <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
+  <project path="external/zlib" name="android_external_zlib" groups="pdk" remote="lpop" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="lpop" />
@@ -354,7 +355,7 @@
   <project path="hardware/qcom/media-caf" name="Lpop-Rom/android_hardware_qcom_media-caf" groups="qcom,qcom_media" remote="github" revision="lpop5.1-caf-8974" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
-  <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="lpop" />
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="lpop" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
@@ -485,7 +486,7 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="lpop" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="lpop" />
-  <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
+  <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="lpop" />
   <project path="system/media" name="android_system_media" groups="pdk"  remote="lpop"/>
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="lpop" />
   <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="lpop" />
