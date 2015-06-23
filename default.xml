@@ -353,7 +353,7 @@
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="lpop" />
   <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom" remote="lpop" />
   <project path="hardware/qcom/media-caf/msm8974" name="Lpop-Rom/android_hardware_qcom_media" groups="qcom,qcom_media" remote="github" revision="lpop5.1-caf-8974" />
-  <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom" remote="lpop" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="lpop" />
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="lpop" />
