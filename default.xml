@@ -345,14 +345,14 @@
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="lpop" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
-  <project path="hardware/qcom/audio/default" name="Lpop-Rom/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="lpop" />
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="lpop" revision="lpop5.1" />
   <project path="hardware/qcom/audio-caf/msm8974" name="Lpop-Rom/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="lpop5.1-caf-8974" />
   <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="lpop" />
-  <project path="hardware/qcom/display/default" name="Lpop-Rom/android_hardware_qcom_display" groups="qcom,qcom_display" remote="lpop" />
+  <project path="hardware/qcom/display/default" name="android_hardware_qcom_display" groups="qcom,qcom_display" remote="lpop" revision="lpop5.1" />
   <project path="hardware/qcom/display-caf/msm8974" name="Lpop-Rom/android_hardware_qcom_display" groups="qcom,qcom_display" remote="github" revision="lpop5.1-caf-8974" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="lpop" />
-  <project path="hardware/qcom/media/default" name="Lpop-Rom/android_hardware_qcom_media" groups="qcom" remote="lpop" />
+  <project path="hardware/qcom/media/default" name="android_hardware_qcom_media" groups="qcom" remote="lpop" revision="lpop5.1" />
   <project path="hardware/qcom/media-caf/msm8974" name="Lpop-Rom/android_hardware_qcom_media" groups="qcom,qcom_media" remote="github" revision="lpop5.1-caf-8974" />
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" />
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom" remote="lpop" />
