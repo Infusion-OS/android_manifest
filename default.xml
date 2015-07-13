@@ -9,7 +9,7 @@
 
 <remote  name="lpop"
           revision="refs/heads/lpop5.1"
-          fetch="git://github.com/Lpop-Rom" />
+          fetch="git://github.com/Infusion-Rom" />
 
 <default revision="refs/tags/android-5.1.1_r6"
           remote="aosp"
@@ -506,7 +506,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="vendor/htc" name="android_vendor_htc" remote="lpop" />
-  <project path="vendor/lpop" name="android_vendor_lpop" remote="lpop" />
+  <project path="vendor/infusion" name="android_vendor_infusion" remote="lpop" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom-opensource_dpm" remote="lpop" />
 
 </manifest>
