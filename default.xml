@@ -508,5 +508,7 @@
   <project path="vendor/htc" name="android_vendor_htc" remote="lpop" />
   <project path="vendor/infusion" name="android_vendor_infusion" remote="lpop" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom-opensource_dpm" remote="lpop" />
-
+  <project path="vendor/motorola" name="android_vendor_motorola" remote="lpop" />
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="lpop" />
+  
 </manifest>
