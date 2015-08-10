@@ -1,4 +1,14 @@
-#Quick steps to sync and build Lpop
+#Infusion-OS©
+
+Infusion-OS is a combination of CAF & AOSP base.
+Infusion-OS was made with simplicity and power in mind.
+Our goal is a solid & fast Operating System complete with
+everything we want & need, minus the bloat. Pull request
+are always welcome and while there's no guarantee your
+request will be submitted, they'll always be considered.
+Now lets get started!!!
+
+#Quick steps to sync and build Infusion-OS
 
 ###Getting Started
 
@@ -52,9 +62,10 @@ You may need to logout/login for path changes to take effect.
 ######Now enter the following to initialize the repository:
 
     cd ~/android/system/
-    repo init -u git://github.com/Lpop-Rom/android_manifest.git -b lpop5.1
+    repo init -u git://github.com/Infusion-OS/android_manifest.git -b lpop5.1
     # Then to start the Sync. (This is gonna take awhile)
-    repo sync -f
+    repo sync -j# "# = amount of cpu your machine has, basic setup would be -j4"
+    Check your manual if you're unsure of available cpu
 
 All proprietary files are kept in the repo, no need to pull them from your device (unless adding devices).
 
@@ -72,12 +83,12 @@ The first time you run lunch the device, vendor, and any dependencies will be au
 #####Building
 
 ######Next, we will build the actual ROM.
-We will specify the amount of jobs you want to run (replace # with number of cpu cores, or be adventurous and max it out!)
+We will specify the amount of jobs you want to run (replace # with number of cpu cores)
 'otapackage' creates the zip file that can be flashed through recovery
 
-    make -j# otapackage
+    make bacon -j#
 
 #####Completed!
-Your compiled Lpop Rom will be located at:
+Your completed build of Infusion-OS will be located at:
 
     ~/android/system/out/target/product/<product>/full_<product>-<release>.zip

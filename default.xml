@@ -7,22 +7,22 @@
 <remote  name="github"
           fetch="git://github.com/" />
 
-<remote  name="lpop"
+<remote  name="infusion"
           revision="refs/heads/lpop5.1"
-          fetch="git://github.com/Infusion-Rom" />
+          fetch="https://github.com/Infusion-OS/" />
 
 <default revision="refs/tags/android-5.1.1_r6"
           remote="aosp"
           sync-j="4" />
 
-  <project path="build" name="android_build" groups="pdk,tradefed" remote="lpop" >
+  <project path="build" name="android_build" groups="pdk,tradefed" remote="infusion" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="android_art" groups="pdk" remote="lpop" />
-  <project path="bionic" name="android_bionic" groups="pdk" remote="lpop" />
+  <project path="art" name="android_art" groups="pdk" remote="infusion" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="infusion" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
-  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="lpop" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="infusion" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
@@ -47,15 +47,15 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
   <project path="device/lge/mako" name="device/lge/mako" groups="device" />
-  <project path="device/htc/m8" name="android_device_htc_m8" groups="device,m8" remote="lpop" />
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="lpop" />
-  <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu" remote="lpop" />
+  <project path="device/htc/m8" name="android_device_htc_m8" groups="device,m8" remote="infusion" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="infusion" />
+  <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu" remote="infusion" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
-  <project path="external/android-visualizer" name="android_external_android-visualizer" remote="lpop" />
+  <project path="external/android-visualizer" name="android_external_android-visualizer" remote="infusion" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="pdk-cw-fs" />
   <project path="external/antlr" name="platform/external/antlr" groups="pdk-cw-fs,tradefed" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" groups="pdk-cw-fs" />
@@ -65,10 +65,10 @@
   <project path="external/arduino" name="platform/external/arduino" groups="pdk-cw-fs" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" groups="pdk-cw-fs" />
-  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" groups="pdk" remote="lpop" />
+  <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" groups="pdk" remote="infusion" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="pdk" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="android_external_busybox" remote="lpop" />
+  <project path="external/busybox" name="android_external_busybox" remote="infusion" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" groups="pdk-cw-fs" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
@@ -116,7 +116,7 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" />
-  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="lpop" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="infusion" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs" />
@@ -124,23 +124,23 @@
   <project path="external/elfutils" name="platform/external/elfutils" groups="pdk" />
   <project path="external/emma" name="platform/external/emma" groups="pdk-cw-fs,tradefed" />
   <project path="external/esd" name="platform/external/esd" groups="pdk-cw-fs" />
-  <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="lpop" />
+  <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="infusion" />
   <project path="external/expat" name="platform/external/expat" groups="pdk" />
   <project path="external/eyes-free" name="platform/external/eyes-free" groups="pdk-cw-fs" />
   <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="pdk" />
   <project path="external/fdlibm" name="platform/external/fdlibm" groups="pdk" />
-  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="lpop" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="infusion" />
   <project path="external/fio" name="platform/external/fio" />
   <project path="external/flac" name="platform/external/flac" groups="pdk" />
   <project path="external/fonttools" name="platform/external/fonttools" />
   <project path="external/freetype" name="platform/external/freetype" groups="pdk" />
-  <project path="external/fsck_msdos" name="android_external_fsck_msdos" groups="pdk-cw-fs" remote="lpop" />
-  <project path="external/fuse" name="android_external_fuse" groups="pdk" remote="lpop" />
+  <project path="external/fsck_msdos" name="android_external_fsck_msdos" groups="pdk-cw-fs" remote="infusion" />
+  <project path="external/fuse" name="android_external_fuse" groups="pdk" remote="infusion" />
   <project path="external/gcc-demangle" name="platform/external/gcc-demangle" groups="pdk" />
   <project path="external/genext2fs" name="platform/external/genext2fs" groups="pdk-cw-fs" />
   <project path="external/giflib" name="platform/external/giflib" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/glide" name="platform/external/glide" />
-  <project path="external/google" name="android_external_google" groups="pdk-cw-fs" remote="lpop" />
+  <project path="external/google" name="android_external_google" groups="pdk-cw-fs" remote="infusion" />
   <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" groups="pdk-cw-fs" />
   <project path="external/google-fonts/coming-soon" name="platform/external/google-fonts/coming-soon" groups="pdk-cw-fs" />
   <project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="pdk-cw-fs" />
@@ -165,7 +165,7 @@
   <project path="external/jhead" name="platform/external/jhead" groups="pdk" />
   <project path="external/jline" name="platform/external/jline" groups="notdefault,tradefed" />
   <project path="external/jmdns" name="platform/external/jmdns" groups="pdk-cw-fs" />
-  <project path="external/jpeg" name="android_external_jpeg" groups="pdk" remote="lpop" />
+  <project path="external/jpeg" name="android_external_jpeg" groups="pdk" remote="infusion" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="pdk-cw-fs,tradefed" />
   <project path="external/jsmn" name="platform/external/jsmn" groups="pdk" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="pdk-cw-fs" />
@@ -191,10 +191,10 @@
   <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="pdk-cw-fs" />
   <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
   <project path="external/libseccomp-helper" name="platform/external/libseccomp-helper" groups="pdk-cw-fs" />
-  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="lpop" />
+  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="infusion" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
   <project path="external/libssh2" name="platform/external/libssh2" groups="pdk-cw-fs" />
-  <project path="external/libtar" name="android_external_libtar" groups="pdk" remote="lpop" />
+  <project path="external/libtar" name="android_external_libtar" groups="pdk" remote="infusion" />
   <project path="external/libunwind" name="platform/external/libunwind" groups="pdk" />
   <project path="external/libusb" name="platform/external/libusb" groups="pdk-cw-fs" />
   <project path="external/libusb-compat" name="platform/external/libusb-compat" groups="pdk-cw-fs" />
@@ -211,7 +211,7 @@
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
-  <project path="external/lz4" name="android_external_lz4" remote="lpop" />
+  <project path="external/lz4" name="android_external_lz4" remote="infusion" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs" />
@@ -242,7 +242,7 @@
   <project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" />
   <project path="external/pcre" name="platform/external/pcre" groups="pdk-cw-fs" />
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk-cw-fs" />
-  <project path="external/pigz" name="android_external_pigz" groups="pdk-cw-fs" remote="lpop" />
+  <project path="external/pigz" name="android_external_pigz" groups="pdk-cw-fs" remote="infusion" />
   <project path="external/pixman" name="platform/external/pixman" groups="pdk-cw-fs" />
   <project path="external/ppp" name="platform/external/ppp" groups="pdk-cw-fs" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java,tradefed" />
@@ -254,9 +254,9 @@
   <project path="external/robolectric" name="platform/external/robolectric" groups="pdk-cw-fs" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
-  <project path="external/sepolicy" name="android_external_sepolicy" groups="pdk" remote="lpop" />
+  <project path="external/sepolicy" name="android_external_sepolicy" groups="pdk" remote="infusion" />
   <project path="external/sfntly" name="platform/external/sfntly" groups="pdk-cw-fs,qcom_msm8x26" />
-  <project path="external/skia" name="android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="lpop" />
+  <project path="external/skia" name="android_external_skia" groups="pdk-cw-fs,qcom_msm8x26" remote="infusion" />
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -264,7 +264,7 @@
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" />
-  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="lpop" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="infusion" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="platform/external/strace" groups="pdk-cw-fs" />
   <project path="external/stressapptest" name="platform/external/stressapptest" groups="pdk-cw-fs" />
@@ -279,17 +279,17 @@
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
-  <project path="external/webp" name="platform/external/webp" groups="pdk-cw-fs,qcom_msm8x26" />
+  <project path="external/webp" name="android_external_webp" groups="pdk-cw-fs,qcom_msm8x26" remote="infusion" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="lpop" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="infusion" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" groups="pdk-cw-fs" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="pdk-cw-fs" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
-  <project path="external/zlib" name="android_external_zlib" groups="pdk" remote="lpop" />
+  <project path="external/zlib" name="android_external_zlib" groups="pdk" remote="infusion" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="lpop" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs"  remote="lpop" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="infusion" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs"  remote="infusion" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -298,25 +298,25 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="lpop" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="infusion" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
-  <project path="frameworks/opt/bluetooth" name="android_frameworks_opt_bluetooth" groups="pdk-cw-fs" remote="lpop" />
+  <project path="frameworks/opt/bluetooth" name="android_frameworks_opt_bluetooth" groups="pdk-cw-fs" remote="infusion" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/chips" name="android_frameworks_opt_chips" groups="pdk-cw-fs" remote="lpop" />
+  <project path="frameworks/opt/chips" name="android_frameworks_opt_chips" groups="pdk-cw-fs" remote="infusion" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/datetimepicker" name="platform/frameworks/opt/datetimepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/hardware" name="android_frameworks_opt_hardware" groups="pdk-cw-fs" remote="lpop" />
+  <project path="frameworks/opt/hardware" name="android_frameworks_opt_hardware" groups="pdk-cw-fs" remote="infusion" />
   <project path="frameworks/opt/inputmethodcommon" name="platform/frameworks/opt/inputmethodcommon" groups="pdk-cw-fs" />
   <project path="frameworks/opt/mms" name="platform/frameworks/opt/mms" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs" remote="lpop" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs" remote="infusion" />
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="lpop"/>
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" groups="pdk" remote="infusion"/>
   <project path="frameworks/opt/net/ethernet" name="platform/frameworks/opt/net/ethernet" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" groups="pdk-cw-fs" />
   <project path="frameworks/opt/setupwizard" name="platform/frameworks/opt/setupwizard" groups="pdk-cw-fs" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="lpop"  />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="infusion"  />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
@@ -343,36 +343,36 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="lpop" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="lpop" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="infusion" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="infusion" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
-  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="lpop" revision="lpop5.1" />
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="infusion" revision="lpop5.1" />
   <project path="hardware/qcom/audio-caf/msm8974" name="Lpop-Rom/android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="github" revision="lpop5.1-caf-8974" />
-  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="lpop" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="qcom,qcom_display" remote="lpop" revision="lpop5.1" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="infusion" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="qcom,qcom_display" remote="infusion" revision="lpop5.1" />
   <project path="hardware/qcom/display-caf/msm8974" name="Lpop-Rom/android_hardware_qcom_display" groups="qcom,qcom_display" remote="github" revision="lpop5.1-caf-8974" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
-  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="lpop" />
-  <project path="hardware/qcom/media/default" name="android_hardware_qcom_media" groups="qcom" remote="lpop" revision="lpop5.1" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="infusion" />
+  <project path="hardware/qcom/media/default" name="android_hardware_qcom_media" groups="qcom" remote="infusion" revision="lpop5.1" />
   <project path="hardware/qcom/media-caf/msm8974" name="Lpop-Rom/android_hardware_qcom_media" groups="qcom,qcom_media" remote="github" revision="lpop5.1-caf-8974" />
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" remote="aosp" />
-  <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom" remote="lpop" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom" remote="infusion" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
-  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="lpop" />
-  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="lpop" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="infusion" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="infusion" />
   <project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
-  <project path="kernel/htc/msm8974" name="android_kernel_htc_msm8974" remote="lpop" />
-  <project path="libcore" name="platform/libcore" groups="pdk" />
+  <project path="kernel/htc/msm8974" name="android_kernel_htc_msm8974" remote="infusion" />
+  <project path="libcore" name="android_libcore" groups="pdk" remote="infusion" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
-  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="lpop" />
+  <project path="packages/apps/AudioFX" name="android_packages_apps_AudioFX" remote="infusion" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs" remote="lpop" />
-  <project path="packages/apps/BluetoothExt" name="android_packages_apps_BluetoothExt" remote="lpop" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" groups="pdk-cw-fs" remote="infusion" />
+  <project path="packages/apps/BluetoothExt" name="android_packages_apps_BluetoothExt" remote="infusion" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
@@ -380,18 +380,18 @@
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" groups="pdk-cw-fs" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="lpop" />
-  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="lpop" />
-  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="lpop" />
-  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="lpop" />
-  <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="lpop" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="infusion" />
+  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="infusion" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="infusion" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="infusion" />
+  <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="infusion" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="lpop" />
+  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="infusion" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="lpop" />
+  <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="infusion" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
-  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="lpop" />
+  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="infusion" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
@@ -399,37 +399,37 @@
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
-  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="lpop" />
+  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="infusion" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lpop" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="infusion" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
-  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="infusion" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" />
-  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="lpop" />
-  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="lpop" />
+  <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="infusion" />
+  <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="infusion" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" groups="pdk-cw-fs" />
-  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" groups="pdk-cw-fs" remote="lpop" />
+  <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" groups="pdk-cw-fs" remote="infusion" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" groups="pdk-cw-fs" />
-  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs" remote="lpop" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs" remote="infusion" />
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
-  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="lpop" />
-  <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" remote="lpop"  />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="infusion" />
+  <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" remote="infusion" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="lpop" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="lpop" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="infusion" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="infusion" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
@@ -488,14 +488,14 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="android_system_core" groups="pdk" remote="lpop" />
-  <project path="system/extras" name="android_system_extras" groups="pdk" remote="lpop" />
-  <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="lpop" />
-  <project path="system/media" name="android_system_media" groups="pdk"  remote="lpop"/>
-  <project path="system/netd" name="android_system_netd" groups="pdk" remote="lpop" />
-  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="lpop" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="infusion" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="infusion" />
+  <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="infusion" />
+  <project path="system/media" name="android_system_media" groups="pdk"  remote="infusion" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="infusion" />
+  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="infusion" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="android_system_vold" groups="pdk" remote="lpop" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="infusion" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
   <project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
@@ -505,10 +505,11 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/htc" name="android_vendor_htc" remote="lpop" />
-  <project path="vendor/infusion" name="android_vendor_infusion" remote="lpop" />
-  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom-opensource_dpm" remote="lpop" />
-  <project path="vendor/motorola" name="android_vendor_motorola" remote="lpop" />
-  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="lpop" />
+  <project path="vendor/htc" name="android_vendor_htc" remote="infusion" />
+  <project path="vendor/infusion" name="android_vendor_infusion" remote="infusion" />
+  <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom-opensource_dpm" remote="infusion" />
+  <project path="vendor/motorola" name="android_vendor_motorola" remote="infusion" />
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="infusion" />
   
 </manifest>
+
